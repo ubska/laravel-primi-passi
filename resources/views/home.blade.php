@@ -12,7 +12,7 @@
 
     <!-- dati del utente -->
     <h2>Utente:</h2>
-    <p>Nome: {{ $user['name'] }}</p>
+    <p>{{ $user['name'] }}</p>
 
     <h3>Hobbies:</h3>
     <ul>
@@ -21,6 +21,13 @@
         <li>{{$hobbie}}</li>
         @endforeach
     </ul>
+
+    <!-- condizione se l'utente è maggiorenne -->
+    @if($user['age'] >= 18)
+    <p>L'utente è maggiorenne</p>
+    @else
+    <p>L'utente è minorenne</p>
+    @endif
 </body>
 
 </html>

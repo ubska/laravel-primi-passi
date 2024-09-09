@@ -18,7 +18,7 @@ Route::get('/', function () {
     $user = [
         'name' => 'Mario Rossi',
         'email' => 'mario.rossi@gmail.com',
-        'age' => 20,
+        'age' => 7,
         'job' => 'web developer',
     ];
 
