@@ -21,5 +21,12 @@ Route::get('/', function () {
         'age' => 20,
         'job' => 'web developer',
     ];
-    return view('home', compact('user'));
+
+    $hobbies = [
+        'Calcio',
+        'Lettura',
+        'Programmazione',
+        'Fotografia',
+    ];
+    return view('home', compact('user', 'hobbies'));
 });

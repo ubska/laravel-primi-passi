@@ -13,6 +13,14 @@
     <!-- dati del utente -->
     <h2>Utente:</h2>
     <p>Nome: {{ $user['name'] }}</p>
+
+    <h3>Hobbies:</h3>
+    <ul>
+        <!-- ciclo foreach di hobbies -->
+        @foreach($hobbies as $hobbie)
+        <li>{{$hobbie}}</li>
+        @endforeach
+    </ul>
 </body>
 
 </html>
